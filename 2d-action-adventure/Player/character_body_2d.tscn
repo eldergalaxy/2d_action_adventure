@@ -1,12 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://blf7y3x2rj746"]
+[gd_scene load_steps=4 format=3 uid="uid://cuctwi7ebyjeq"]
 
 [ext_resource type="Texture2D" uid="uid://c64p6yvdriwqq" path="res://Ninja Adventure - Asset Pack/Ninja Adventure - Asset Pack/Actor/Characters/Boy/SeparateAnim/Item.png" id="1_f50pn"]
+[ext_resource type="Script" uid="uid://cxrqydvbfrfgw" path="res://Player/player.gd" id="1_vvw5e"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ij6vw"]
 radius = 7.0
 height = 14.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_vvw5e")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_ij6vw")
